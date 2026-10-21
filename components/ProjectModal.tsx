@@ -59,7 +59,7 @@ the other half of the team handled the AI side, including intent classification 
   {
     title: "Traffic Jam Assist Simulation",
     summary: "a Unity simulation of Traffic Jam Assist, an automotive safety feature that extends adaptive cruise control for stop-and-go highway traffic, built for a retired Ford engineer.",
-    description: `for my intro to software engineering class, our team of 6 worked with a retired Ford engineer as our client to spec out and simulate Traffic Jam Assist: an extension of adaptive cruise control designed for congested highway conditions. while the rest of the team handled client communication, requirements planning, and system diagrams, i built the simulation itself in Unity using C#.
+    description: `for my intro to software engineering class, our team of 5 worked with a retired Ford engineer as our client to spec out and simulate Traffic Jam Assist: an extension of adaptive cruise control designed for congested highway conditions. while the rest of the team handled client communication, requirements planning, and system diagrams, i built the simulation itself in Unity using C#.
 
     the simulation covers 6 scenarios: highway detection (TJA only engages on limited access highways), speed-based following, automatic disengagement above 65 km/h, full stop-and-go behavior, adjustable following distance (10/15/20m), and radar obstruction handling. each scenario has its own screen with interactive controls and dashboard feedback like warning icons and chime sequences.`,
     tech: ["Unity", "C#"],
@@ -81,13 +81,13 @@ export default function ProjectModal() {
           <div
             key={project.title}
             onClick={() => { setSelected(project); setImageIndex(0); }}
-            className="border border-gray-200 rounded-lg p-5 flex flex-col gap-2 cursor-pointer hover:border-gray-400 transition-colors"
+            className="border border-[#b9cfe8] rounded-lg p-5 flex flex-col gap-2 cursor-pointer hover:border-gray-400 transition-colors"
           >
             <h3 className="font-medium">{project.title}</h3>
             <p className="text-sm text-gray-600">{project.summary}</p>
             <div className="flex flex-wrap gap-2 mt-1">
               {project.tech.map((t) => (
-                <span key={t} className="text-xs border border-gray-200 rounded-full px-3 py-1">
+                <span key={t} className="text-xs border border-[#b9cfe8] rounded-full px-3 py-1">
                   {t}
                 </span>
               ))}
@@ -175,7 +175,7 @@ export default function ProjectModal() {
             {/* Tech tags */}
             <div className="flex flex-wrap gap-2">
               {selected.tech.map((t) => (
-                <span key={t} className="text-xs border border-gray-200 rounded-full px-3 py-1">
+                <span key={t} className="text-xs border border-[#b9cfe8] rounded-full px-3 py-1">
                   {t}
                 </span>
               ))}
